@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WPM to TPS Converter",
+  "version": "1.0.0",
+  "description": "Converts typing speed from Words Per Minute (WPM) to Tokens Per Second (TPS) to visualize typing in LLM output terms",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.nitrotype.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
